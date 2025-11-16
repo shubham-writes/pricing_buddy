@@ -5,7 +5,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-         fontFamily: {
+        fontFamily: {
         jakarta: ['"Plus Jakarta Sans"', 'sans-serif'],
         dancing: ['"Dancing Script"', 'cursive'],
         lobster: ['"Lobster"', 'cursive'],
