@@ -30,12 +30,12 @@ export default function Navbar() {
   };
 
   const mobileMenuVariants = {
-    hidden: { 
+    hidden: {
       opacity: 0,
       y: -20,
       scale: 0.95
     },
-    visible: { 
+    visible: {
       opacity: 1,
       y: 0,
       scale: 1,
@@ -61,35 +61,34 @@ export default function Navbar() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className={`fixed w-full z-50 transition-all duration-300 ease-out ${
-          isScrolled 
-            ? 'bg-none' 
+        className={`fixed w-full z-50 transition-all duration-300 ease-out ${isScrolled
+            ? 'bg-none'
             : 'bg-none backdrop-blur-md'
-        }`}
+          }`}
       >
         <div className="max-w-7xl mx-auto px-6 py-4">
           {/* Grid Layout for Even Spacing */}
           <div className="grid grid-cols-3 items-center">
-            
+
             {/* Logo - Left Section */}
-            <motion.div 
+            <motion.div
               className="flex items-center space-x-3 justify-self-start"
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.2 }}
             >
               {/* Logo with Glass Effect - Circular */}
               <div className="border border-black/10 rounded-xl p-1 bg-white/10 backdrop-blur-sm shadow-xl">
-              
-                  <div className="px-2 py-1 bg-white/90 backdrop-blur-xl flex items-center justify-center rounded-lg shadow-lg">
-                    <img src={PBlogo} alt="PB" className="mr-2  w-8 h-8" />
-                    <h2 className="text-xl font-bold text-gray-900 tracking-tight ">
-                  Pricing<span className="text-blue-600 font-lobster">Buddy</span>
-                </h2>
-                  </div>
-                
+
+                <div className="px-2 py-1 bg-white/90 backdrop-blur-xl flex items-center justify-center rounded-lg shadow-lg">
+
+                  <h2 className="text-xl font-bold text-gray-900 tracking-tight ">
+                    Pricing<span className="text-blue-600 font-lobster">Buddy</span>
+                  </h2>
+                </div>
+
               </div>
               <div>
-                
+
               </div>
             </motion.div>
 
@@ -112,7 +111,7 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
-            
+
             {/* CTA Button - Right Section */}
             <div className="hidden md:flex justify-self-end">
               <motion.div
@@ -123,15 +122,15 @@ export default function Navbar() {
                 <div className="border border-black/10 rounded-xl p-1 bg-white/10 backdrop-blur-sm shadow-xl">
                   <div className="border border-white/20 rounded-lg p-1 bg-white backdrop-blur-xl flex items-center gap-0.5">
                     {/* Login Button */}
-                    <NavLink 
-                      to="/login" 
+                    <NavLink
+                      to="/login"
                       className="relative text-xs px-2 py-1 rounded-md font-normal transition-all duration-200 ease-out text-gray-700 hover:text-blue-600 hover:bg-gray-50/80"
                     >
                       Log in
                     </NavLink>
                     {/* Sign Up Button with Gradient */}
-                    <NavLink 
-                      to="/signup" 
+                    <NavLink
+                      to="/signup"
                       className="relative text-xs px-2 py-1 rounded-md font-medium transition-all duration-200 ease-out bg-gradient-to-r from-blue-500 to-pink-500 text-white shadow-lg hover:shadow-xl hover:from-blue-600 hover:to-pink-600"
                     >
                       Sign up
@@ -193,33 +192,33 @@ export default function Navbar() {
           >
             <div className="bg-white/95 backdrop-blur-xl rounded-3xl shadow-2xl border border-gray-100/50 overflow-hidden">
               <div className="p-6 space-y-2">
-                <NavLink 
-                  to="/" 
+                <NavLink
+                  to="/"
                   className="block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50/50 rounded-xl font-medium transition-all duration-200"
                 >
                   Home
                 </NavLink>
-                <NavLink 
-                  to="/how-it-works" 
+                <NavLink
+                  to="/how-it-works"
                   className="block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50/50 rounded-xl font-medium transition-all duration-200"
                 >
                   How it Works
                 </NavLink>
-                <NavLink 
-                  to="/features" 
+                <NavLink
+                  to="/features"
                   className="block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50/50 rounded-xl font-medium transition-all duration-200"
                 >
                   Features
                 </NavLink>
-                <NavLink 
-                  to="/pricing" 
+                <NavLink
+                  to="/pricing"
                   className="block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50/50 rounded-xl font-medium transition-all duration-200"
                 >
                   Pricing
                 </NavLink>
                 <div className="pt-4 border-t border-gray-100">
-                  <NavLink 
-                    to="/calculator" 
+                  <NavLink
+                    to="/calculator"
                     className="block w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center px-6 py-4 rounded-2xl font-semibold shadow-lg"
                   >
                     Try Calculator
